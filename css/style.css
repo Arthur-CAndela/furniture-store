@@ -1,0 +1,312 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #E5E5E5;
+}
+
+.header{
+  padding-top: 28px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 355px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__title{
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 217px;
+  float: left;
+  margin-bottom: 24px;
+}
+
+.header__notice{
+  margin-left: auto;
+  display: flow-root;
+  padding-top: 15px;
+}
+
+.input__inner{
+  position: relative;
+}
+
+.input__inner::before{
+  content: "";
+  position: absolute;
+  background: url('../images/search.svg');
+  height: 17px;
+  width: 16px;
+  transform: translateY(12px);
+  left: 16px;
+}
+
+.header__search{
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  Padding: 8px 44px 12px;
+  outline: none;
+  border: 1px solid #DEDEDE;
+  color: #121212;
+}
+
+.header__search:focus{
+  border-color: #121212;
+}
+
+.categories{
+  margin-top: 24px;
+}
+.popular__inner,
+.categories__inner{
+  overflow: hidden;
+}
+
+.categories__title{
+  float: left;
+}
+
+.arrow-right{
+  color: #E29547;
+  float: right;
+  padding-top: 8px;
+}
+
+.arrow-right img{
+  margin-left: 8px;
+}
+
+.categories__slider{
+  margin-top: 26px;
+  margin-left: 20px;
+}
+
+.categories__item{
+  margin-right: 8px;
+  outline: none;
+}
+
+.categories__item span{
+  color: #121212;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  transform: translate3d(12px, 18px, 10px);
+}
+
+.categories__banners{
+  margin-top: 24px;
+}
+
+.banner{
+  background-image: url('../images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 18px 0px 17px 20px;
+  margin-bottom: 24px;
+}
+
+.banner__info{
+  max-width: 102px;
+  color: #4E5471;
+  font-size: 14px;
+}
+
+.banner__info p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.banner__info span{
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.banner__link{
+  font-size: 10px;
+  line-height: 15px;
+  color: #4E5471;
+  position: relative;
+}
+
+.banner__link::after{
+  content: "";
+  position: absolute;
+  background: url('../images/banner-arrow.svg');
+  width: 12px;
+  height: 6px;
+  transform: translate3d(8px, 7px, 10px);
+}
+
+.categories__banners .slick-dots{
+  position: absolute;
+}
+
+.slick-dots{
+  list-style: none;
+  width: 20px;
+  justify-content: space-between;
+  display: flex;
+  left: 48%;
+  transform: translateY(-23px);
+}
+
+.slick-dots button{
+  font-size: 0;
+  width: 4px;
+  height: 4px;
+  background: #121212;
+  opacity: 0.2;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+.slick-active button{
+  opacity: 1;
+}
+
+.popular__title{
+  float: left;
+  margin-bottom: 20px;
+}
+
+.popular__items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.popular__item{
+  width: 149px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.popular__icon{
+  position: absolute;
+  right: 16px;
+  top: 8px;
+}
+
+.popular__item p{
+  color: #AAAAAA;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.popular__item span{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.promotion span{
+  color: #E24747;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promotion span:first-child{
+  color: #AAAAAA;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.sale__info{
+  background-image: url('../images/sale.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E29547;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  margin-bottom: 51px;
+}
+
+.sale__title{
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 600;
+  padding-top: 27px;
+}
+
+.sale span{
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.rooms__title{
+  margin-bottom: 4px;
+}
+
+.heading{
+  color: #AAAAAA;
+  margin-bottom: 20px;
+}
+
+.rooms__slider{
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+.rooms__item{
+  margin-right: 16px;
+  position: relative;
+}
+
+.rooms__item span{
+  font-size: 14px;
+  line-height: 20px;
+  color: #121212;
+  position: absolute;
+  max-width: 60px;
+  left: 12px;
+  top: 12px;
+}
+
+.footer{
+  position: sticky;
+}
+
+.line{
+  width: 100%;
+  border: 1px solid #DEDEDE;
+}
+
+.footer__nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.nav__link{
+  margin: 16px 0;
+}
