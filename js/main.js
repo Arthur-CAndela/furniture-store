@@ -21,4 +21,10 @@ $(function(){
     slidesToShow: 3
   });
 
+  $('.favorites').on('click', function(){
+    $(this).toggleClass('favorites--active')
+    console.log(23456789)
+    return false
+  })
+
 });
